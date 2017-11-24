@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    path = '/home/hope/files/'
+    path = '/home/shiyanlou/files/'
     files = os.listdir(path)
     titles = []
     for file in files:
@@ -22,8 +22,8 @@ def index():
 
 @app.route('/files/<filename>')
 def file(filename):
-    dirpath = '/home/hope/files/'
-    filepath = os.path.join(dirpath, filename)
+    dirpath = '/home/shiyanlou/files/'
+    filepath = os.path.join(dirpath, filename + '.json')
     if not os.path.exists(filepath):
         abort(404)
     else:
