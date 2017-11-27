@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="zh-CN">
+  <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-{% for i in info %}
-    <h1>{{ i['title'] }}</h1>
-    <br>
-    <p>{{ i['created_time'] }}</p>
-    <br>
-    <p>{{ i['content'] }}</p>
-{% endfor %}
-</body>
+    <title>file</title>
+  </head>
+  <body>
+    <h1>{{ file_item['title'] }}</h1>
+    <p>{{ file_item['created_time'] }}</p>
+    <p>{{ file_item['content'] }}</p>
+  </body>
 </html>
+
